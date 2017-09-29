@@ -1,0 +1,20 @@
+<h4 class="createProjectH4">Welcome! Start by naming your project and writing a brief description about it. </h4>
+<div class="createProject">
+    <div class="form-group">
+        <label for="fullname">Name</label>
+        <input type="text" class="form-control" name="fullname" ng-model="formData.fullname" placeholder="Full name" ng-minlength=3 ng-required required>
+        <label for="description">Description </label>
+
+        <textarea class="form-control" name="description"></textarea>
+
+
+    </div>
+    <tt>FormData = {{formData.fullname}}</tt><br/>
+    <div class="form-group row">
+        <div class="col-xs-12" class="btnbox-center">
+            <a ui-sref="project.addMarker" class="btn btn-right btn-info" >
+    Next <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+        </div>
+    </div>
+</div>

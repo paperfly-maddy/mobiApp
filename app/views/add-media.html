@@ -1,0 +1,22 @@
+<h4 class="createProjectH4">Upload the media files for the project. </h4>
+<h5 style="text-align:center;">You can add images, videos, audio clips, pdfs, unity files, 3D files and URLs. </h5>
+<div>
+    <form>
+        <input type="file" accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf" multiple>
+    </form>
+</div>
+
+<div class="col-xs-12" class="btnbox-center">
+        <a ui-sref="project.edit" class="btn btn-right btn-info" >
+                Next <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                </a>
+        <a ui-sref="project.addMarker" class="btn btn-info">
+         <span class="glyphicon glyphicon-circle-arrow-left"></span> Back
+        </a>   
+        </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('input[type="file"]').imageuploadify();
+    })
+</script>

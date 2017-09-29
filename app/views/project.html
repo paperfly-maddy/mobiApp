@@ -1,0 +1,49 @@
+<div class="row">
+        <div class="col-md-1 menubar"></div>
+        <div class="col-md-2 menubar">
+            <div class="well wellmenu">
+                <a ui-sref-active="active" ui-sref=".createProject"><span>1</span> CREATE PROJECT</a>
+            </div>
+        </div>
+    
+        <div class="col-md-2 menubar">
+            <div class="well wellmenu">
+                <a ui-sref-active="active" ui-sref=".addMarker"><span>2</span> ADD MARKER</a>
+            </div>
+        </div>
+        <div class="col-md-2 menubar">
+            <div class="well wellmenu">
+                <a ui-sref-active="active" ui-sref=".addMedia"><span>3</span> ADD MEDIA</a>
+            </div>
+        </div>
+        <div class="col-md-2 menubar">
+            <div class="well wellmenu">
+                <a ui-sref-active="active" ui-sref=".edit"><span>4</span> EDIT </a>
+            </div>
+        </div>
+        <div class="col-md-2 menubar">
+            <div class="well wellmenu">
+                <a ui-sref-active="active" ui-sref=".publish"><span>5</span> PUBLISH</a>
+            </div>
+        </div>
+        <div class="col-md-1 menubar"></div>
+
+        <div class="col-sm-8 col-sm-offset-2">
+    
+            <div class="row">
+    
+            </div>
+    
+            <div id="form-container">
+    
+    
+                <!-- use ng-submit to catch the form submission and use our Angular function -->
+                <form name="signupform" novalidate ng-submit="processForm()">
+                    <!--  nested state views will be injected here  -->
+                    <div id="form-views" ui-view></div>
+                </form>
+    
+            </div>
+    
+        </div>
+    </div>
